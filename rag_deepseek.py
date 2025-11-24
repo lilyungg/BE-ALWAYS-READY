@@ -5,23 +5,13 @@ import numpy as np
 from datasets import load_dataset
 from sentence_transformers import SentenceTransformer
 from tqdm.auto import tqdm
-#from transformers import AutoTokenizer, AutoModelForCausalLM
-import os
 import requests
 
 INDEX_PATH = "data/wiki.index"
 META_PATH = "data/meta.pkl"
 EMB_MODEL = os.getenv("EMB_MODEL", "all-MiniLM-L6-v2")
-
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
-DEEPSEEK_MODEL = os.getenv("DEEPSEEK_MODEL", "deepseek-chat")  # или нужная тебе модель
-MAX_TOKENS = int(os.getenv("MAX_TOKENS", "256"))
-
-INDEX_PATH = "data/wiki.index"
-META_PATH = "data/meta.pkl"
-EMB_MODEL = os.getenv("EMB_MODEL", "all-MiniLM-L6-v2")
-DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
-DEEPSEEK_MODEL = os.getenv("DEEPSEEK_MODEL", "deepseek-chat")  # или нужная тебе модель
+DEEPSEEK_MODEL = os.getenv("DEEPSEEK_MODEL", "deepseek-chat")
 MAX_TOKENS = int(os.getenv("MAX_TOKENS", "256"))
 
 class WikiIndexer:
@@ -47,7 +37,11 @@ class WikiIndexer:
         for art in tqdm(articles, desc="Processing"):
             chunks = self.chunk_text(art["text"])
             for c in chunks:
-                processed.append({"title": art["title"], "url": art["url"], "chunk": c})
+                processed.append({
+                    "title": art["title"],
+                    "url": art.get("url", ""),
+                    "chunk": c
+                })
         return processed
 
     def build_index(self, data, index_path=INDEX_PATH, meta_path=META_PATH):
@@ -73,9 +67,10 @@ class WikiIndexer:
         q_emb = self.model.encode([query], convert_to_numpy=True).astype("float32")
         dist, idx = self.index.search(q_emb, k)
         return [(self.metadata[i], dist[0][j]) for j, i in enumerate(idx[0])]
-    
+
 class DeepSeekRag:
     def __init__(self, indexer: WikiIndexer):
+        #DEEPSEEK_API_KEY='sk-23995d3098ae4fb9ab51f1dc6e7bae65'
         if not DEEPSEEK_API_KEY:
             raise RuntimeError("DEEPSEEK_API_KEY is not set")
         self.indexer = indexer
@@ -111,16 +106,26 @@ class DeepSeekRag:
         )
         answer = self._call_deepseek(prompt)
         return answer, docs
-    
+
 def main():
     indexer = WikiIndexer()
     if os.path.exists(INDEX_PATH) and os.path.exists(META_PATH):
         print("Loading existing index...")
         indexer.load()
     else:
-        print("Building index from Wikipedia (1000 articles)...")
-        ds = load_dataset("wikipedia", "20220301.simple", split="train", streaming=True)
-        data = indexer.process_dataset(list(ds.take(1000)))
+        print("Building index from EPSTEIN_FILES_20K...")
+        ds = load_dataset("tensonaut/EPSTEIN_FILES_20K", split="train")
+        # Этот датасет: поля file_name, text, возможно "length" и др.
+        records = []
+        for row in ds:
+            text = row.get("text") or row.get("content") or ""
+            if not text.strip():
+                continue
+            title = row.get("file_name") or row.get("id") or "EPSTEIN_DOC"
+            url = ""  # URL нет
+            records.append({"title": title, "url": url, "text": text})
+
+        data = indexer.process_dataset(records)
         indexer.build_index(data)
         print("Index built.")
 
@@ -143,7 +148,6 @@ def main():
         for d, score in docs[:3]:
             print(f"- {d['title']} (score={score:.4f})")
         print("-" * 60)
-
 
 if __name__ == "__main__":
     main()
