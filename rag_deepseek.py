@@ -70,7 +70,6 @@ class WikiIndexer:
 
 class DeepSeekRag:
     def __init__(self, indexer: WikiIndexer):
-        #DEEPSEEK_API_KEY='sk-23995d3098ae4fb9ab51f1dc6e7bae65'
         if not DEEPSEEK_API_KEY:
             raise RuntimeError("DEEPSEEK_API_KEY is not set")
         self.indexer = indexer
