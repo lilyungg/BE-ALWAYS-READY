@@ -2,6 +2,7 @@ import os
 import pickle
 import faiss
 import numpy as np
+from bs4 import BeautifulSoup
 from datasets import load_dataset
 from sentence_transformers import SentenceTransformer
 from tqdm.auto import tqdm
@@ -105,6 +106,164 @@ class DeepSeekRag:
         )
         answer = self._call_deepseek(prompt)
         return answer, docs
+
+
+class HabrIndexer:
+    def __init__(self, model_name=EMB_MODEL, batch_size=32):
+        self.model = SentenceTransformer(model_name)
+        self.batch_size = batch_size
+        self.index = None
+        self.metadata = []
+
+    def chunk_text(self, text, chunk_size=512, overlap=50):
+        words = text.split()
+        step = max(1, chunk_size - overlap)
+        chunks = []
+        for i in range(0, len(words), step):
+            chunk = " ".join(words[i:i + chunk_size])
+            if chunk.strip():
+                chunks.append({"text": chunk, "metadata": {}})
+        return chunks
+
+    def process_dataset(self, links: list[str]):
+        processed = []
+
+        for link in tqdm(links, desc="Processing"):
+            response = requests.get(link, headers={
+                "User-Agent": "Mozilla/5.0"
+            })
+            html = response.text
+            soup = BeautifulSoup(html, "html.parser")
+
+            title_tag = soup.select_one("h1.tm-title span")
+            title = title_tag.text.strip() if title_tag else ""
+
+            content_block = soup.select_one("div.article-formatted-body")
+            if not content_block:
+                print(f"⚠️ Can't extract article text from {link}")
+                continue
+
+            article_text = " ".join([p.get_text(" ", strip=True) for p in content_block.find_all(["p", "li"])])
+
+            chunks = self.chunk_text(article_text)
+
+            for chunk in chunks:
+                processed.append({
+                    "source_type": "habr",
+                    "document_title": title,
+                    "url": link,
+                    "chunk": chunk
+                })
+
+        return processed
+
+    def build_index(self, data, index_path=INDEX_PATH, meta_path=META_PATH):
+        os.makedirs(os.path.dirname(index_path), exist_ok=True)
+        d = self.model.get_sentence_embedding_dimension()
+        self.index = faiss.IndexFlatL2(d)
+        for i in tqdm(range(0, len(data), self.batch_size), desc="Indexing"):
+            batch = data[i:i + self.batch_size]
+            texts = [x["chunk"] for x in batch]
+            emb = self.model.encode(texts, convert_to_numpy=True, show_progress_bar=False)
+            self.index.add(emb.astype("float32"))
+            self.metadata.extend(batch)
+        faiss.write_index(self.index, index_path)
+        with open(meta_path, "wb") as f:
+            pickle.dump(self.metadata, f)
+
+    def load(self, index_path=INDEX_PATH, meta_path=META_PATH):
+        self.index = faiss.read_index(index_path)
+        with open(meta_path, "rb") as f:
+            self.metadata = pickle.load(f)
+
+    def search(self, query, k=5):
+        q_emb = self.model.encode([query], convert_to_numpy=True).astype("float32")
+        dist, idx = self.index.search(q_emb, k)
+        return [(self.metadata[i], dist[0][j]) for j, i in enumerate(idx[0])]
+
+
+class LenaVoitaIndexer:
+    def __init__(self, model_name=EMB_MODEL, batch_size=32):
+        self.model = SentenceTransformer(model_name)
+        self.batch_size = batch_size
+        self.index = None
+        self.metadata = []
+
+    def chunk_text(self, text, chunk_size=512, overlap=50):
+        words = text.split()
+        step = max(1, chunk_size - overlap)
+        chunks = []
+        for i in range(0, len(words), step):
+            chunk = " ".join(words[i:i + chunk_size])
+            if chunk.strip():
+                chunks.append({"text": chunk, "metadata": {}})
+        return chunks
+
+    def process_dataset(self, links: list[str]):
+        processed = []
+        for link in tqdm(links, desc="Processing"):
+            try:
+                response = requests.get(link, headers={"User-Agent": "Mozilla/5.0"})
+                html = response.text
+                soup = BeautifulSoup(html, "html.parser")
+
+                header_div = soup.select_one("div.header h1")
+                title = header_div.text.strip() if header_div else ""
+
+                main_content = soup.select_one("div#main_content.main_content")
+                if not main_content:
+                    print(f"⚠️ Can't find main content on {link}")
+                    continue
+
+                allowed_tags = ["p", "li", "h1", "h2", "h3", "h4", "span"]
+                content_parts = []
+                for tag in main_content.find_all(allowed_tags):
+
+                    text = tag.get_text(" ", strip=True)
+                    if text:
+                        content_parts.append(text)
+
+                article_text = " ".join(content_parts)
+
+                chunks = self.chunk_text(article_text)
+
+                for chunk in chunks:
+                    processed.append({
+                        "source_type": "lena_volta",
+                        "document_title": title,
+                        "url": link,
+                        "chunk": chunk
+                    })
+            except Exception as e:
+                print(f"Error processing {link}: {e}")
+                continue
+
+        return processed
+
+    def build_index(self, data, index_path=INDEX_PATH, meta_path=META_PATH):
+        os.makedirs(os.path.dirname(index_path), exist_ok=True)
+        d = self.model.get_sentence_embedding_dimension()
+        self.index = faiss.IndexFlatL2(d)
+        for i in tqdm(range(0, len(data), self.batch_size), desc="Indexing"):
+            batch = data[i:i + self.batch_size]
+            texts = [x["chunk"] for x in batch]
+            emb = self.model.encode(texts, convert_to_numpy=True, show_progress_bar=False)
+            self.index.add(emb.astype("float32"))
+            self.metadata.extend(batch)
+        faiss.write_index(self.index, index_path)
+        with open(meta_path, "wb") as f:
+            pickle.dump(self.metadata, f)
+
+    def load(self, index_path=INDEX_PATH, meta_path=META_PATH):
+        self.index = faiss.read_index(index_path)
+        with open(meta_path, "rb") as f:
+            self.metadata = pickle.load(f)
+
+    def search(self, query, k=5):
+        q_emb = self.model.encode([query], convert_to_numpy=True).astype("float32")
+        dist, idx = self.index.search(q_emb, k)
+        return [(self.metadata[i], dist[0][j]) for j, i in enumerate(idx[0])]
+
 
 def main():
     indexer = WikiIndexer()
