@@ -1,0 +1,3266 @@
+[
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.6666666666666666,
+        "ndcg@k": 1
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 1.0,
+        "ndcg@k": 1
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 1.0,
+        "ndcg@k": 1
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.6666666666666666,
+        "ndcg@k": 1
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.6666666666666666,
+        "ndcg@k": 1
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.5,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.6309297535714575
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.5,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.6309297535714575
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.3333333333333333,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.5
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.6666666666666666,
+        "ndcg@k": 1
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.6666666666666666,
+        "ndcg@k": 1
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.3333333333333333,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.5
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.3333333333333333,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.5
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.6666666666666666,
+        "ndcg@k": 1
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.3333333333333333,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.5
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.5,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.6309297535714575
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.5,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.6309297535714575
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.5,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.6309297535714575
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.3333333333333333,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.5
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.3333333333333333,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.5
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.6666666666666666,
+        "ndcg@k": 1
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.5,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.6309297535714575
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.3333333333333333,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.5
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.5,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.6309297535714575
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.5,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.6309297535714575
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.3333333333333333,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.5
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.3333333333333333,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.5
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.5,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.6309297535714575
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.5,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.6309297535714575
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.6666666666666666,
+        "ndcg@k": 1
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.5,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.6309297535714575
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.6666666666666666,
+        "ndcg@k": 1
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 1.0,
+        "ndcg@k": 1
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.6666666666666666,
+        "ndcg@k": 1
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.6666666666666666,
+        "ndcg@k": 1
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.5,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.6309297535714575
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.6666666666666666,
+        "ndcg@k": 1
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.6666666666666666,
+        "ndcg@k": 1
+    },
+    {
+        "mrr": 0.3333333333333333,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.5
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.5,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.6309297535714575
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.5,
+        "recall@k": 1.0,
+        "precision@k": 0.6666666666666666,
+        "ndcg@k": 1
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.3333333333333333,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.5
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.5,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.6309297535714575
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.6666666666666666,
+        "ndcg@k": 1
+    },
+    {
+        "mrr": 0.5,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.6309297535714575
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.6666666666666666,
+        "ndcg@k": 1
+    },
+    {
+        "mrr": 0.3333333333333333,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.5
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.5,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.6309297535714575
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.6666666666666666,
+        "ndcg@k": 1
+    },
+    {
+        "mrr": 0.3333333333333333,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.5
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.6666666666666666,
+        "ndcg@k": 1
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.6666666666666666,
+        "ndcg@k": 1
+    },
+    {
+        "mrr": 0.5,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.6309297535714575
+    },
+    {
+        "mrr": 0.5,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.6309297535714575
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.3333333333333333,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.5
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.6666666666666666,
+        "ndcg@k": 1
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 1.0,
+        "ndcg@k": 1
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 1.0,
+        "ndcg@k": 1
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.5,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.6309297535714575
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.6666666666666666,
+        "ndcg@k": 1
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.6666666666666666,
+        "ndcg@k": 1
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.6666666666666666,
+        "ndcg@k": 1
+    },
+    {
+        "mrr": 0.3333333333333333,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.5
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.6666666666666666,
+        "ndcg@k": 1
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.5,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 0.6309297535714575
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 1.0,
+        "recall@k": 1.0,
+        "precision@k": 0.3333333333333333,
+        "ndcg@k": 1.0
+    },
+    {
+        "mrr": 0.0,
+        "recall@k": 0.0,
+        "precision@k": 0.0,
+        "ndcg@k": 0.0
+    }
+]
