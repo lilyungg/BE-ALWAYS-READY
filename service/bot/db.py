@@ -51,7 +51,7 @@ class Database:
             return [
                 {"role": r["role"], "content": r["text"]}
                 for r in rows
-            ]
+            ][-6:]
 
     async def save_llm_answer(
             self,

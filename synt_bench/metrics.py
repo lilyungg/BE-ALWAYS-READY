@@ -1,3 +1,37 @@
+import os
+
+from ragas import evaluate
+from ragas.metrics import (
+    answer_relevancy,
+    answer_correctness,
+)
+from datasets import Dataset
+from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_openai import ChatOpenAI
+
+ragas_embeddings = HuggingFaceEmbeddings(
+    model_name="intfloat/multilingual-e5-large-instruct"
+)
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY",
+                           "").strip()
+OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
+OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL")
+OPENAI_TIMEOUT = float(os.getenv("OPENAI_TIMEOUT", "60"))
+OPENAI_MAX_TOKENS = 2000
+
+if not OPENAI_API_KEY:
+    raise RuntimeError("OPENAI_API_KEY is not set")
+
+ragas_llm = ChatOpenAI(
+    model=OPENAI_MODEL,
+    api_key=OPENAI_API_KEY,
+    base_url=OPENAI_BASE_URL if OPENAI_BASE_URL else None,
+    timeout=OPENAI_TIMEOUT,
+    max_retries=2,
+)
+
+
 def mrr(retrieved_urls, relevant_urls):
     for i, url in enumerate(retrieved_urls, start=1):
         if url in relevant_urls:
@@ -59,14 +93,15 @@ PROMPT_LLM_JUDGE = """
 Ответь ТОЛЬКО числом от 1 до 5.
 """
 
-
 import re
+
 
 def parse_judge_score(text: str) -> int:
     match = re.search(r"[1-5]", text)
     if not match:
         raise ValueError(f"Invalid judge output: {text}")
     return int(match.group())
+
 
 def llm_as_judge(llm_call, question, ref_answer, gen_answer):
     prompt = PROMPT_LLM_JUDGE.format(
@@ -79,13 +114,45 @@ def llm_as_judge(llm_call, question, ref_answer, gen_answer):
     return parse_judge_score(raw)
 
 
+def ragas_metrics_for_sample(
+        sample,
+        retrieved_docs,
+        generated_answer,
+        llm,
+        embeddings
+):
+    print(sample)
+    data = {
+        "question": [sample["question"]],
+        "answer": [generated_answer],
+        "contexts": [[sample['ground_truth_docs'][0]['text']]],
+        "ground_truth": [sample["answers"][0]],
+    }
+
+    dataset = Dataset.from_dict(data)
+
+    result = evaluate(
+        dataset,
+        metrics=[
+            answer_relevancy,
+            answer_correctness,
+        ],
+        llm=llm,
+        embeddings=embeddings,
+    )
+    results_df = result.to_pandas()  # This is a Pandas DataFrame
+
+    results_dict = results_df.to_dict(orient='records')  # List of dicts
+
+    return results_dict[0]
+
 
 def evaluate_sample(
-    sample,
-    retrieved_docs,
-    generated_answer,
-    llm_call,
-    k=5
+        sample,
+        retrieved_docs,
+        generated_answer,
+        llm_call,
+        k=5
 ):
     retrieved_urls = [d["url"] for d in retrieved_docs]
     relevant_urls = [d["url"] for d in sample["ground_truth_docs"]]
@@ -97,16 +164,26 @@ def evaluate_sample(
         "ndcg@k": ndcg_at_k(retrieved_urls, relevant_urls, k),
     }
 
-    judge_score = llm_as_judge(
+    # LLM-as-a-judge
+    metrics["llm_judge_score"] = llm_as_judge(
         llm_call,
         sample["question"],
         sample["answers"][0],
         generated_answer
     )
 
-    metrics["llm_judge_score"] = judge_score
+    # RAGAS
+    ragas_scores = ragas_metrics_for_sample(
+        sample,
+        retrieved_docs,
+        generated_answer,
+        ragas_llm,
+        ragas_embeddings
+    )
+    metrics.update(ragas_scores)
 
     return metrics
+
 
 def average_metrics(results):
     avg = {}

@@ -1,4 +1,7 @@
-fastapi
-uvicorn
-faiss-cpu
-sentence-transformers
+fastapi==0.127.0
+uvicorn==0.40.0
+faiss-cpu==1.13.0
+sentence-transformers==5.1.2
+beautifulsoup4==4.14.3
+torch==2.9.1+cpu
+--extra-index-url https://download.pytorch.org/whl/cpu

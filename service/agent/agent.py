@@ -1,104 +1,77 @@
 import asyncio
-import os
 import re
 import json
 from typing import Any, Dict, List, Optional, Tuple, Union
-
+from config import *
 import requests
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 
-from rag_deepseek import (
-    MergedFaissIndex,
-    DeepSeekRag,
-    INDEX_PATH,
-    META_PATH,
-    DEEPSEEK_MODEL,
-    MAX_TOKENS,
-)
-
-RAG_ONLY = os.getenv("RAG_ONLY", "1").lower() in ("1", "true", "yes", "y", "on")
-TOP_K = int(os.getenv("RAG_TOP_K", "5"))
-INCLUDE_SOURCES = os.getenv("INCLUDE_SOURCES", "1").lower() in ("1", "true", "yes", "y", "on")
-MAX_CONTEXT_CHARS = int(os.getenv("RAG_MAX_CONTEXT_CHARS", "14000"))
-
-ROUTER_TEMP = float(os.getenv("ROUTER_TEMP", "0.0"))
-WORK_TEMP = float(os.getenv("WORK_TEMP", "0.2"))
-VALIDATOR_TEMP = float(os.getenv("VALIDATOR_TEMP", "0.0"))
-FINAL_TEMP = float(os.getenv("FINAL_TEMP", "0.2"))
-# DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY", "").strip()
-#
-# def _deepseek_chat(messages: List[Dict[str, str]], temperature: float) -> str:
-#     if not DEEPSEEK_API_KEY:
-#         raise RuntimeError("DEEPSEEK_API_KEY is not set")
-#
-#     r = requests.post(
-#         "https://api.deepseek.com/chat/completions",
-#         headers={
-#             "Authorization": f"Bearer {DEEPSEEK_API_KEY}",
-#             "Content-Type": "application/json",
-#         },
-#         json={
-#             "model": os.getenv("DEEPSEEK_MODEL", DEEPSEEK_MODEL),
-#             "messages": messages,
-#             "max_tokens": int(os.getenv("MAX_TOKENS", str(MAX_TOKENS))),
-#             "temperature": float(temperature),
-#         },
-#         timeout=60,
-#     )
-#     r.raise_for_status()
-#     return r.json()["choices"][0]["message"]["content"].strip()
-#
-# def _invoke(prompt: ChatPromptTemplate, vars: Dict[str, Any], temperature: float) -> str:
-#     """Invoke DeepSeek with LangChain prompt messages."""
-#     lc_msgs = prompt.format_messages(**vars)
-#     ds_msgs: List[Dict[str, str]] = []
-#
-#     for m in lc_msgs:
-#         if isinstance(m, SystemMessage):
-#             ds_msgs.append({"role": "system", "content": m.content})
-#         elif isinstance(m, HumanMessage):
-#             ds_msgs.append({"role": "user", "content": m.content})
-#         elif isinstance(m, AIMessage):
-#             ds_msgs.append({"role": "assistant", "content": m.content})
-#         else:
-#             ds_msgs.append({"role": "user", "content": str(getattr(m, "content", m))})
-#
-#     return _deepseek_chat(ds_msgs, temperature=temperature)
 from langchain_openai import ChatOpenAI
 
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY",
-                           "").strip()
-OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
-OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL")
-OPENAI_TIMEOUT = float(os.getenv("OPENAI_TIMEOUT", "60"))
-OPENAI_MAX_TOKENS = 2000
+if MODEL_SOURCE == "deepseek":
+    print("deepseek")
+    def _deepseek_chat(messages: List[Dict[str, str]], temperature: float) -> str:
+        if not DEEPSEEK_API_KEY:
+            raise RuntimeError("DEEPSEEK_API_KEY is not set")
 
-if not OPENAI_API_KEY:
-    raise RuntimeError("OPENAI_API_KEY is not set")
-
-_BASE_LLM = ChatOpenAI(
-    model=OPENAI_MODEL,
-    api_key=OPENAI_API_KEY,
-    base_url=OPENAI_BASE_URL if OPENAI_BASE_URL else None,
-    timeout=OPENAI_TIMEOUT,
-    max_retries=2,
-)
-
-
-def _invoke(prompt: ChatPromptTemplate, vars: Dict[str, Any], temperature: float) -> str:
-    lc_msgs = prompt.format_messages(**vars)
-    llm = _BASE_LLM
-    if OPENAI_MAX_TOKENS:
-        llm = llm.bind(max_tokens=int(OPENAI_MAX_TOKENS))
-    # ВАЖНО: некоторые модели OpenAI могут не поддерживать temperature=0.0,
-    # поэтому если вернёшься к OpenAI — лучше не передавать temperature вообще.
-    # llm = llm.bind(temperature=float(temperature))
-    res = llm.invoke(lc_msgs)
-    return (getattr(res, "content", str(res)) or "").strip()
+        r = requests.post(
+            f"{DEEPSEEK_BASE_URL}/chat/completions",
+            headers={
+                "Authorization": f"Bearer {DEEPSEEK_API_KEY}",
+                "Content-Type": "application/json",
+            },
+            json={
+                "model": DEEPSEEK_MODEL,
+                "messages": messages,
+                "max_tokens": DEEPSEEK_MAX_TOKENS,
+                "temperature": float(temperature),
+            },
+            timeout=DEEPSEEK_TIMEOUT,
+        )
+        r.raise_for_status()
+        return r.json()["choices"][0]["message"]["content"].strip()
 
 
-_RAG: Optional[Any] = None
+    def _invoke(prompt: ChatPromptTemplate, vars: Dict[str, Any], temperature: float) -> str:
+        """Invoke DeepSeek with LangChain prompt messages."""
+        lc_msgs = prompt.format_messages(**vars)
+        ds_msgs: List[Dict[str, str]] = []
+
+        for m in lc_msgs:
+            if isinstance(m, SystemMessage):
+                ds_msgs.append({"role": "system", "content": m.content})
+            elif isinstance(m, HumanMessage):
+                ds_msgs.append({"role": "user", "content": m.content})
+            elif isinstance(m, AIMessage):
+                ds_msgs.append({"role": "assistant", "content": m.content})
+            else:
+                ds_msgs.append({"role": "user", "content": str(getattr(m, "content", m))})
+
+        return _deepseek_chat(ds_msgs, temperature=temperature)
+elif MODEL_SOURCE == "openai":
+
+    if not OPENAI_API_KEY:
+        raise RuntimeError("OPENAI_API_KEY is not set")
+
+    _BASE_LLM = ChatOpenAI(
+        model=OPENAI_MODEL,
+        api_key=OPENAI_API_KEY,
+        base_url=OPENAI_BASE_URL,
+        timeout=OPENAI_TIMEOUT,
+        max_retries=2,
+    )
+
+
+    def _invoke(prompt: ChatPromptTemplate, vars: Dict[str, Any], temperature: float) -> str:
+        lc_msgs = prompt.format_messages(**vars)
+        llm = _BASE_LLM
+        if OPENAI_MAX_TOKENS:
+            llm = llm.bind(max_tokens=int(OPENAI_MAX_TOKENS))
+        res = llm.invoke(lc_msgs)
+        return (getattr(res, "content", str(res)) or "").strip()
+else:
+    raise ValueError("No correct MODEL_SOURCE")
 
 
 def _extract_json(text: str) -> Optional[dict]:
@@ -212,17 +185,34 @@ COURSE_PROMPT = ChatPromptTemplate.from_messages([
 
 
 def _rag_context(route: str, user_text: str, topic: str, search_client) -> Tuple[str, List[dict]]:
-    if route == "interview":
-        q = f"Собеседование по теме: {topic or user_text}. Ключевые понятия, вопросы, ответы, подводные камни."
-    elif route == "course":
-        q = f"План подготовки к собеседованию по теме: {topic or user_text}. Темы, порядок, практика, источники."
-    else:
-        q = user_text
+    n_queries = 3
+    queries = _rewrite_queries(user_text, n=n_queries)
 
-    hits = asyncio.run(search_client.search(q, k=TOP_K))
-    context = _hits_to_context(hits)
+    # 2. Поиск по каждому запросу
+    all_hits: List[dict] = []
+    for qu in queries:
+        try:
+            hits = asyncio.run(search_client.search(qu, k=TOP_K))
+            all_hits.extend(hits or [])
+        except Exception:
+            continue
 
-    return context, hits
+    # 3. Дедуп по chunk + url
+    seen = set()
+    uniq_hits = []
+    for h in all_hits:
+        key = (
+            (h.get("chunk") or "").strip(),
+            (h.get("url") or "").strip(),
+        )
+        if key in seen:
+            continue
+        seen.add(key)
+        uniq_hits.append(h)
+
+    context = _hits_to_context(uniq_hits)
+
+    return context, uniq_hits
 
 
 VALIDATOR = ChatPromptTemplate.from_messages([
@@ -241,10 +231,39 @@ FINALIZER = ChatPromptTemplate.from_messages([
 ])
 
 
+def _rewrite_queries(text: str, n: int = 5) -> List[str]:
+    QUERY_REWRITE_PROMPT = ChatPromptTemplate.from_messages([
+        ("system",
+         "Ты помощник для поиска по базе знаний.\n"
+         "Сгенерируй несколько поисковых запросов.\n"
+         "Раздели его на подзапросы, которые определяют части запроса"
+         "Верни СТРОГО JSON без текста:\n"
+         '{{"queries": ["...","..."]}}\n'
+         ),
+        ("human", "{text}")
+    ])
+    raw = _invoke(
+        QUERY_REWRITE_PROMPT,
+        {"text": text},
+        temperature=0.3,
+    )
+    data = _extract_json(raw) or {}
+    queries = data.get("queries") or []
+
+    if not isinstance(queries, list):
+        return [text]
+
+    queries = [q.strip() for q in queries if isinstance(q, str) and q.strip()]
+    queries = queries[:n]
+
+    # всегда добавляем исходный запрос
+    return _dedup([text] + queries)
+
+
 # MAIN
 def agent_main(user_input: Union[str, Dict[str, Any]],
-             search_clien,
-             history: Optional[Dict[str, Any]] = None) -> str:
+               search_client,
+               history: Optional[Dict[str, Any]] = None) -> str:
     if isinstance(user_input, dict):
         user_text = str(user_input.get("text") or user_input.get("query") or user_input.get("message") or "").strip()
     else:
@@ -256,22 +275,19 @@ def agent_main(user_input: Union[str, Dict[str, Any]],
             history_str = json.dumps(history, ensure_ascii=False, indent=2)
         except Exception:
             history_str = str(history)
-
+    orig_query = user_text
     if history_str:
-        user_text = f"История переписки (json):\n{history_str}\n\nТекущий запрос:\n{user_text}".strip()
-
+        user_text = f"История переписки (json), можешь использовать для улучшения ответа на текущий запрос:\n{history_str}\n\nТекущий запрос:\n{user_text}".strip()
 
     if not user_text:
         return "Пустой запрос. Напиши вопрос или тему."
 
     r = _route(user_text)
     route, topic = r["route"], r["topic"]
-
-    context, hits = _rag_context(route, user_text=user_text, topic=topic, search_client=search_clien)
+    context, hits = _rag_context(route, user_text=orig_query, topic=topic, search_client=search_client)
 
     if RAG_ONLY and not context.strip():
         return "Не нашёл релевантной информации в базе по этому запросу. Попробуй переформулировать."
-
     if route == "interview":
         draft = _invoke(
             INTERVIEW_PROMPT,

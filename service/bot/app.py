@@ -2,8 +2,7 @@ import asyncio
 from aiogram import Bot, Dispatcher, F
 from aiogram.types import Message
 from aiogram.fsm.context import FSMContext
-
-from config import BOT_TOKEN
+from config import *
 from db import db
 from states import UserState
 from keyboards import main_menu, back_menu
@@ -65,14 +64,7 @@ async def chat_handler(message: Message, state: FSMContext):
 
     history = await db.get_dialog_history(user_id)
 
-    payload = {
-        "user_id": user_id,
-        "mode": "chat",
-        "history": history,
-        "last_user_message": message.text
-    }
-
-    result = await send_to_external_service(message.text)
+    result = await send_to_external_service(message.text, history)
 
     await db.save_llm_answer(
         user_id,
@@ -85,7 +77,6 @@ async def chat_handler(message: Message, state: FSMContext):
 
 @dp.message(UserState.upload)
 async def upload_handler(message: Message, state: FSMContext):
-
     result = await parse_url(message.text)
 
     await message.answer(

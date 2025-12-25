@@ -1,8 +1,7 @@
-import os
 import pickle
 import requests
 import faiss
-
+from config import *
 from fastapi import FastAPI
 from pydantic import BaseModel
 from bs4 import BeautifulSoup
@@ -10,11 +9,6 @@ from sentence_transformers import SentenceTransformer
 
 # ================= CONFIG =================
 
-EMB_MODEL = os.getenv("EMB_MODEL", "intfloat/multilingual-e5-large")
-
-DATA_DIR = "e5-large"
-INDEX_PATH = f"{DATA_DIR}/merged.index"
-META_PATH = f"{DATA_DIR}/merged_meta.pkl"
 
 CHUNK_SIZE = 512
 OVERLAP = 64
@@ -26,6 +20,7 @@ app = FastAPI(title="Habr Parser + FAISS")
 model = SentenceTransformer(EMB_MODEL)
 index = None
 metadata: list[dict] = []
+
 
 # ================= UTILS =================
 
@@ -62,6 +57,7 @@ def load_index():
         metadata = []
         print("🆕 Created new FAISS index")
 
+
 # ================= MODELS =================
 
 class ParseRequest(BaseModel):
@@ -72,11 +68,13 @@ class SearchRequest(BaseModel):
     query: str
     k: int = 5
 
+
 # ================= EVENTS =================
 
 @app.on_event("startup")
 def startup():
     load_index()
+
 
 # ================= API =================
 
@@ -140,7 +138,6 @@ def search(req: SearchRequest):
     q = model.encode([req.query], convert_to_numpy=True).astype("float32")
     faiss.normalize_L2(q)
     scores, idx = index.search(q, req.k)
-    print(idx)
     results = []
     for rank, i in enumerate(idx[0]):
         if i < 0:
@@ -149,5 +146,4 @@ def search(req: SearchRequest):
             "score_cosine": float(scores[0][rank]),
             **metadata[int(i)]
         })
-    print(results)
     return results

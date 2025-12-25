@@ -45,5 +45,5 @@ meow = []
 for i in tqdm(data):
     ans, hits = rag.answer(i, k=3)
     meow.append(evaluate_sample(i, hits, ans, llm_call, 3))
-    with open("result_metrics_e5.json", "w", encoding="utf-8") as f:
+    with open("result_metrics_e52.json", "w", encoding="utf-8") as f:
         json.dump(meow, f, ensure_ascii=False, indent=4)

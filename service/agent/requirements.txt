@@ -1,4 +1,5 @@
-fastapi
-uvicorn
-httpx
-langchain
+fastapi==0.127.0
+uvicorn==0.40.0
+httpx==0.28.1
+langchain-core==1.2.5
+langchain-openai==1.1.6

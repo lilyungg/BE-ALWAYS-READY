@@ -1,3 +1,4 @@
+from config import *
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 from typing import Optional, Dict, Any
@@ -5,12 +6,14 @@ import traceback
 
 from agent import agent_main
 from search_client import SearchClient
+
 app = FastAPI(
     title="DeepSeek RAG Agent API",
     description="API для QA / Interview / Course агента на FastAPI + DeepSeek + RAG",
     version="1.0.0",
 )
-search_client = SearchClient("http://0.0.0.0:8000")
+search_client = SearchClient(SEARCH_SERVICE_URL)
+
 
 # ---------
 # SCHEMAS
@@ -24,6 +27,7 @@ class AgentRequest(BaseModel):
     query: Optional[str] = None
     message: Optional[str] = None
     extra: Optional[Dict[str, Any]] = None
+    history: Optional[list[dict]] = None
 
 
 class AgentResponse(BaseModel):
@@ -47,7 +51,7 @@ def health():
 def run_agent(req: AgentRequest):
     try:
         # agent_main умеет принимать dict
-        result = agent_main(req.dict(exclude_none=True), search_client)
+        result = agent_main(req.dict(exclude_none=True), search_client, req.history)
         return {"result": result}
 
     except Exception as e:
@@ -64,6 +68,7 @@ def run_agent(req: AgentRequest):
 
 if __name__ == "__main__":
     import uvicorn
+
     uvicorn.run(
         "main:app",
         host="0.0.0.0",
