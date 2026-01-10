@@ -11,7 +11,7 @@ async def send_to_external_service(text: str, history: dict[str, str]):
         response = await client.post(
             f'{AGENT_SERVICE_URL}/agent',
             json={"text": text, "history": history},
-            timeout=70
+            timeout=120
         )
         return response.json()["result"]
 

@@ -3,3 +3,7 @@ uvicorn==0.40.0
 httpx==0.28.1
 langchain-core==1.2.5
 langchain-openai==1.1.6
+sentence-transformers==5.1.2
+einops==0.8.1
+torch==2.9.1+cpu
+--extra-index-url https://download.pytorch.org/whl/cpu

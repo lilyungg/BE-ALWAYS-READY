@@ -9,8 +9,21 @@ from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 
 from langchain_openai import ChatOpenAI
 
+from sentence_transformers import CrossEncoder
+
+CROSS_ENCODER_MODEL = "jinaai/jina-reranker-v2-base-multilingual"
+CROSS_ENCODER_TOP_K = 6  # сколько чанков оставляем после rerank
+
+_cross_encoder = CrossEncoder(
+    CROSS_ENCODER_MODEL,
+    max_length=128,
+    trust_remote_code=True
+)
+
 if MODEL_SOURCE == "deepseek":
     print("deepseek")
+
+
     def _deepseek_chat(messages: List[Dict[str, str]], temperature: float) -> str:
         if not DEEPSEEK_API_KEY:
             raise RuntimeError("DEEPSEEK_API_KEY is not set")
@@ -97,6 +110,7 @@ def _dedup(xs: List[str]) -> List[str]:
 
 
 def _hits_to_context(hits: List[dict]) -> str:
+    print(len(hits))
     parts = []
     for i, h in enumerate(hits or [], start=1):
         chunk = (h.get("chunk") or "").strip()
@@ -186,8 +200,9 @@ COURSE_PROMPT = ChatPromptTemplate.from_messages([
 
 def _rag_context(route: str, user_text: str, topic: str, search_client) -> Tuple[str, List[dict]]:
     n_queries = 3
+    print(user_text)
     queries = _rewrite_queries(user_text, n=n_queries)
-
+    print(queries)
     # 2. Поиск по каждому запросу
     all_hits: List[dict] = []
     for qu in queries:
@@ -209,10 +224,17 @@ def _rag_context(route: str, user_text: str, topic: str, search_client) -> Tuple
             continue
         seen.add(key)
         uniq_hits.append(h)
+    print(user_text)
+    # 🔹 Cross-encoder rerank
+    reranked_hits = _rerank_hits(
+        query=user_text,
+        hits=uniq_hits,
+        top_k=CROSS_ENCODER_TOP_K,
+    )
 
-    context = _hits_to_context(uniq_hits)
+    context = _hits_to_context(reranked_hits)
 
-    return context, uniq_hits
+    return context, reranked_hits
 
 
 VALIDATOR = ChatPromptTemplate.from_messages([
@@ -258,6 +280,45 @@ def _rewrite_queries(text: str, n: int = 5) -> List[str]:
 
     # всегда добавляем исходный запрос
     return _dedup([text] + queries)
+
+
+def _rerank_hits(
+        query: str,
+        hits: List[dict],
+        top_k: int = CROSS_ENCODER_TOP_K,
+) -> List[dict]:
+    """
+    Rerank hits using cross-encoder.
+    Each hit must contain 'chunk'.
+    """
+
+    if not hits:
+        return []
+
+    pairs = []
+    valid_hits = []
+
+    for h in hits:
+        chunk = (h.get("chunk") or "").strip()
+        if not chunk:
+            continue
+        pairs.append((query, chunk))
+        valid_hits.append(h)
+
+    if not pairs:
+        return []
+    print(pairs)
+    try:
+        scores = _cross_encoder.predict(pairs, show_progress_bar=True)
+    except Exception:
+        return hits[:top_k]
+
+    for h, s in zip(valid_hits, scores):
+        h["_ce_score"] = float(s)
+
+    valid_hits.sort(key=lambda x: x.get("_ce_score", 0.0), reverse=True)
+    print(valid_hits)
+    return valid_hits[:top_k]
 
 
 # MAIN

@@ -63,7 +63,7 @@ async def chat_handler(message: Message, state: FSMContext):
     )
 
     history = await db.get_dialog_history(user_id)
-
+    history = []
     result = await send_to_external_service(message.text, history)
 
     await db.save_llm_answer(
